@@ -1,0 +1,45 @@
+.trend-main{
+	.select-date{
+		width: 4.1rem;
+		overflow: hidden;
+		text-align: center;
+		box-sizing:border-box;
+		display: flex;
+		border-radius: 100px;
+		margin:0.58rem auto 0rem;
+		li{
+			width:0.9rem;
+			height:0.6rem;
+			border-left: 1px solid rgba(204,204,204,1);
+			border-top: 1px solid rgba(204,204,204,1);
+			border-bottom: 1px solid rgba(204,204,204,1);
+			font-size:0.26rem;
+			color:rgba(102,102,102,1);
+			line-height:0.6rem;
+			text-align: center;
+			box-sizing:border-box;
+			&:first-child{
+				flex: 1;
+				width: 1.1rem;
+				border-top-left-radius:100px;
+				border-bottom-left-radius:100px;
+
+			}
+			&:last-child{
+				border-top-right-radius:100px;
+				border-bottom-right-radius:100px;
+				flex: 1;
+				border-right:0;
+				width: 1.1rem;
+				border-right: 1px solid rgba(204,204,204,1);
+
+			}
+			&.active{
+				background:rgba(249,77,81,1);
+				border:1px solid rgba(249,77,81,1);
+				color: #fff;
+			}
+		}
+	}
+
+}

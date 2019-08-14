@@ -1,0 +1,62 @@
+.charts-index {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 1.19rem;
+    .index-content{
+        margin: 0 1% .2rem 2%;
+        background: #fff;
+        -webkit-box-shadow: 0 2px 14px 0 rgba(110, 127, 150, 0.13);
+        box-shadow: 0 2px 14px 0 rgba(110, 127, 150, 0.13);
+        width: 46.5%;
+        padding: .2rem;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        h3{
+            line-height: 0.26rem;
+            font-size: 0.26rem;
+            color: #666;
+        }
+        h2{
+            line-height: 0.56rem;
+            font-size: 0.56rem;
+            color: #000;
+            margin-top: 0.16rem;
+            margin-bottom: 0.4rem;
+            font-family:'iconfont-tcl';
+        }
+        .rate-1{
+            margin-bottom: 0.14rem;
+            display: flex;
+            justify-content:space-between;
+            span{
+                color: #666;
+                font-size: 0.26rem;
+                line-height: 0.26rem;
+            }
+        }
+        .rate-2{
+            width:100%;
+            background:rgba(224,232,234,1);
+            border-radius:100px;
+            height: 0.14rem;
+            margin-bottom: 0.28rem;
+            span{
+                width: 2rem;
+                background:rgba(224,232,234,1);
+                border-radius:100px;
+                height: 0.14rem;
+                display: block;
+                max-width: 100%;
+            }
+        }
+    }
+}

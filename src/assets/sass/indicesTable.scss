@@ -1,0 +1,118 @@
+.common-list{
+    background:#fff;
+    margin-bottom: 0.16rem;
+    width:100%;
+    padding-bottom:0.3rem;
+    box-shadow:0px 2px 14px 0px rgba(110,127,150,0.13);
+    .common-title{
+        z-index:99;
+        position:absolute;
+        background:#fff;
+        padding: 0.3rem;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        h2{
+            height:0.3rem;
+            font-size:0.3rem;
+            font-weight: bold;
+            color:rgba(0,0,0,1);
+            line-height:0.3rem;
+            float: left;
+
+        }
+        p{
+            float: right;
+            height:0.3rem;
+            font-size:0.28rem;
+
+            color:rgba(102,102,102,1);
+            line-height:0.3rem;
+        }
+    }
+    .thead-cont{
+        // table-layout:fixed;
+        z-index:100;
+        position:absolute;
+        // width:6.9rem;
+        margin-left:0.3rem;
+    }
+    table{
+        width:6.9rem;
+        text-align: center;
+        border-collapse: collapse;
+        margin-left:0.3rem;
+        thead{
+            transform:translateY(0px)
+        }
+        th{
+            height: 0.66rem;
+            background: rgba(223,230,235,1);
+            font-size: 0.22rem;
+            color: #666;
+            font-weight: bold;
+            border: 1px solid #CDDAE4;
+        }
+        tr{
+            background:rgba(243,247,249,1);
+            td{
+                height: 0.54rem;
+                // min-width:0.5rem;
+                border: 1px solid #CDDAE4;
+                color: #000;
+                font-size: 0.22rem;
+                &.white{
+                    background:#fff;
+                }
+                &.yellow{
+                    background:#F8F0E3;
+                }
+                &.red{
+                    background:rgba(231,77,81,1);
+                    color:#fff;
+                }
+                &.orange{
+                    background:#F5A623;
+                    color:#fff;
+                }
+                &.green{
+                    background:#5AB309;
+                    color:#fff;
+                }
+                
+            }
+            &:nth-child(odd){
+                background:#fff;
+            }
+            &.total{
+                background:rgba(248,240,227,1);
+            }
+        }
+        
+
+    }
+}
+.indices-main{
+    padding-bottom:2.5rem;
+    .common-tip{
+        margin-top: 0.24rem;
+        // padding: 0 0.24rem;
+        font-size: 0.24rem;
+        color: #666;
+        i{
+            font-style: normal;
+            display: inline-block;
+            float: left;
+            padding-left: 0.24rem;
+            line-height: 0.36rem;
+        }
+        p{
+
+            float: right;
+            width: 6.7rem;
+            padding-right: 0.24rem;
+            box-sizing: border-box;
+            line-height: 0.36rem;
+        }
+    }
+}

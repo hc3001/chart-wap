@@ -1,0 +1,209 @@
+.main {
+    width: 100%;
+    background-color: rgba(18, 23, 57, 1);
+    .main-infor {
+        background: url("/static/images/saleTable.png") no-repeat;
+        background-size: cover;
+        height: 9.82rem;
+        padding: 0.3rem 0.39rem 0 0.39rem;
+        .main-top {
+            display: flex;
+            justify-content: space-between;
+            .main-time {
+                width: 1.07rem;
+                height: 0.88rem;
+                color: rgba(255,255,255,0.6);
+                border-top: 1px solid rgba(255,255,255,0.6);
+                border-bottom: 1px solid rgba(255,255,255,0.6);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                div:first-child {
+                    text-align: center;
+                    letter-spacing: 0.095rem;
+                    position: relative;
+                    top: 0;
+                    left: 0.05rem;
+                }
+                div:last-child {
+                    text-align: center;
+                }
+                .detail-time {
+                    font-size: 0;
+                    span {
+                        font-size: 0.30rem;
+                    }
+                    .fgx {
+                        margin-right: 0.1rem;
+                    }
+                }
+            }
+            .main-time.hide {
+                border: none
+            }
+        }
+        .main-detail {
+            margin-top: 0.54rem;
+            .time-select {
+                position: relative;
+                color: rgba(255,255,255,0.6);
+                border: 1px solid rgba(255,255,255,0.6);
+                border-radius: 3px;
+                width: 1.1rem;
+                height: 0.5rem;
+                line-height: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span:first-child {
+                    margin-right: 0.1rem;
+                }
+                .iconfont {
+                    color: rgba(255,255,255,0.6);
+                }
+            }
+            .accumu-title {
+                margin-top: 0.44rem;
+                display: inline-block;
+                div:first-child {
+                    color: rgba(255,255,255,0.6);
+                    margin-bottom: 0.14rem;
+                }
+                div.font45 {
+                    color: #fff;
+                }
+            }
+            .accumu-target {
+                margin-top: 0.32rem;
+                span:first-child {
+                    color: rgba(255,255,255,0.6);
+                    margin-right: 0.1rem;
+                }
+                span:last-child {
+                    color: #fff;
+                }
+            }
+            .accomplishRate {
+                margin-top: 0.68rem;
+                .rate-number {
+                    color: #fff;
+                    font-size: 0;
+                    span:first-child {
+                        display: inline-block;
+                    }
+                }
+            }
+            .growth-rate {
+                margin-top: 0.32rem;
+                .font15 {
+                    color: rgba(255,255,255,0.6);
+                }
+                .down {
+                    font-weight: 600;
+                    color: rgba(255, 53, 57, 1);
+                }
+                .up {
+                    color: rgba(97, 198, 6, 1);
+                    font-weight: 600;
+                }
+                .middle {
+                    margin-right: 0.15rem;
+                }
+                .percent {
+                    font-size: 0.22rem;
+                }
+                .no-data {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .department {
+        padding: 0 0.3rem;
+        .depart-task {
+            height: 11.76rem;
+            background-color: #fff;
+            border-radius: 0.1rem;
+            .ve-histogram {
+                margin-top: 0.27rem;
+                margin-bottom: 0.56rem;
+            }
+        }
+        .depart-per {
+            height: 11.84rem;
+            background-color: #fff;
+            border-radius: 0.1rem;
+            margin-top: 0.2rem;
+            .ve-pie {
+                margin-top: 0.38rem;
+                margin-bottom: 0.70rem;
+                position: relative;
+                .completion-rate {
+                    position: absolute;
+                    top: 55%;
+                    left: 50%;
+                    transform: translate(-50%, -55%);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .black-font {
+                        color: rgba(0, 0, 0, 1);
+                        font-weight: 700;
+                    }
+                    .gray-font {
+                        color: rgba(102, 102, 102, 1);
+                    }
+                }
+            }
+        }
+        .department-title {
+            padding-top: 0.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .title-text {
+                color: rgba(0, 0, 0, 1);
+                margin: 0 0.26rem;
+                font-weight: 700;
+            }
+            .iconfont {
+                font-size: 0.26rem;
+                color: rgba(254, 55, 59, 1);
+            }
+        }
+        .department-select {
+            margin-top: 0.4rem;
+            padding: 0 1.82rem;
+            display: flex;
+            justify-content: space-around;
+            .select {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: rgba(254, 55, 59, 1);
+            }
+            .no-select {
+                color: rgba(153, 153, 153, 1);
+            }
+            .select::after {
+                content: '';
+                display: inline-block;
+                height: 0.06rem;
+                width: 0.42rem;
+                background-color: rgba(254, 55, 59, 1);
+                margin-top: 0.06rem;
+            }
+        }
+    }
+}
+.van-action-sheet {
+    z-index: 10002 !important;
+}
+.van-popup.van-popup--bottom {
+    z-index: 1000000000 !important;
+}
+.van-dropdown-menu__title::after {
+    display: none !important;
+}

@@ -1,0 +1,32 @@
+.van-tabs__wrap{
+	position: fixed !important;
+	//top: 0.89rem;
+    top: 0.88rem !important;
+	height: 0.88rem;
+	z-index: 200;
+	width: 100%;
+	margin-bottom: 0.2rem;
+	// border-bottom: 0.2rem #f6f6f6 solid;
+	.van-tab{
+		font-size: 0.32rem;
+		color:rgba(153,153,153,1);
+	}
+	.van-tab--active{
+		color: #C63A39;
+		font-weight: bold;
+	}
+	.van-tabs__line{
+		background-color: #C63A39;
+	}
+}
+.van-tabs__content{
+	margin-top: 1.1rem;
+}
+.testimg{
+	width:100%;
+	height:8.94rem;
+}
+.testimg1{
+	width:100%;
+	height:10.3rem;
+}
