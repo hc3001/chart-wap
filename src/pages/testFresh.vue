@@ -38,8 +38,8 @@
             this.$nextTick(()=> {
                 // setTimeout(()=> {
                     console.log('ss', this.$refs.sss.$el)
-                    // this.$refs.sss.$el.style.height = '18rem'
-                    // this.$refs.sss.$el.style.overflow = 'scroll'
+                    this.$refs.sss.$el.style.height = '18rem'
+                    this.$refs.sss.$el.style.overflow = 'scroll'
                     this.$refs.sss.$el.scrollTop = 100
                 // }, 100)
             })
