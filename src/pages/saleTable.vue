@@ -192,6 +192,22 @@
         mounted() {
             this.getfirstData()
             this.getsecondData()
+            this.$nextTick(()=> {
+                // setTimeout(()=> {
+                //     // console.log(this.$refs.sss, this.$refs.sss.$el)
+                //     // this.$refs.sss.$el.style.height = '100%'
+                //     // this.$refs.sss.$el.style.overflow = 'visible'
+                //     // this.$refs.sss.scrollTop = 50
+                //     document.documentElement.scrollTop = 500
+                // }, 100)
+                console.log('sss', document.querySelector('.main'))
+                // setTimeout(()=> {
+                document.querySelector('.main').style.height = '12rem'
+                document.querySelector('.main').style.overflow = 'scroll'
+                document.querySelector('.main').scrollTop = 500
+                // }, 200)
+            })
+
         },
         methods: {
             getfirstData() {

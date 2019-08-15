@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div ref="sss">
-            <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+        <div>
+            <van-pull-refresh v-model="isLoading" @refresh="onRefresh" ref="sss">
                 <van-list v-model="loading" :finished="finished" @load="onLoad" :immediate-check="false">
                     <van-cell v-for="item in list" :key="item" :title="item" @click="geDetail"/>
                 </van-list>
@@ -31,12 +31,17 @@
         },
         mounted() {
             this.$nextTick(()=> {
-                window.addEventListener('scroll', ()=> {
-                    console.log('this', this, document.documentElement.scrollTop, window.pageYOffset)
-                }, false)
+                // window.addEventListener('scroll', ()=> {
+                //     console.log('this', this, document.documentElement.scrollTop, window.pageYOffset)
+                // }, false)
             })
             this.$nextTick(()=> {
-                document.querySelector('.van-list').pageYOffset = 50
+                // setTimeout(()=> {
+                    console.log('ss', this.$refs.sss.$el)
+                    // this.$refs.sss.$el.style.height = '18rem'
+                    // this.$refs.sss.$el.style.overflow = 'scroll'
+                    this.$refs.sss.$el.scrollTop = 100
+                // }, 100)
             })
         },
         activated() {
@@ -46,6 +51,14 @@
                 this.list = [] // 清空原有数据
                 this.init() // 这是我们获取数据的函数
             }
+            this.$nextTick(()=> {
+                // setTimeout(()=> {
+                console.log('ss')
+                // this.$refs.sss.$el.style.height = '18rem'
+                // this.$refs.sss.$el.style.overflow = 'scroll'
+                this.$refs.sss.$el.scrollTop = 100
+                // }, 100)
+            })
             this.$route.meta.isUseCache = false
         },
         beforeRouteLeave (to, from, next) {
@@ -102,4 +115,12 @@
     .van-list {
         margin-bottom: 2rem;
     }
+    .van-pull-refresh {
+        overflow: scroll !important;
+        height: 17rem;
+    }
+    /*.van-pull-refresh__track {*/
+        /*overflow: scroll;*/
+        /*height: 15rem;*/
+    /*}*/
 </style>
