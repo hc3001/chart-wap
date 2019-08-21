@@ -1,6 +1,6 @@
 # TCLchart-wap
 
-> 可视化项目前端开发
+> 数据看板可视化前端项目
 ## 代码地址
 http://10.120.54.112/kuyoo-data/TCLchart-wap.git
 
