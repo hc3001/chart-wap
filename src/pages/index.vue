@@ -100,6 +100,7 @@
             }
         },
         mounted() {
+            this['test/pushNumber'](1)
             if(this.headerStatus.date) {
                 this.getData()
             }
@@ -107,7 +108,8 @@
         },
         methods: {
             ...mapMutations([
-                'categorySelect'
+                'categorySelect',
+                'test/pushNumber'
             ]),
             numberFormat(value) {
                 return NumberFormat(value)

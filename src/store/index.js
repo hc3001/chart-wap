@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import test from './modules/test'
+import VuexPersistence from 'vuex-persist'
+
 Vue.use(Vuex)
 
 const state = {//要设置的全局访问的state对象
@@ -35,15 +38,31 @@ const mutations = {
 }
 const actions = {
     //异步调用获取时间
-    getDate(context, select) {
-        context.commit('changeSelect', select)
+    getDate({state, commit, dispatch}, select) {
+        commit('changeSelect', select)
+        dispatch('test')
     },
+    test() {
+        console.log('test')
+    }
 }
+const vuexLocal = new VuexPersistence({
+    storage: window.localStorage,
+    reducer(val) {
+        return {
+            // 只储存state中的assessmentData
+            categoryStatus: val.categoryStatus
+        }}
+})
+console.log('vuexLocal', vuexLocal)
 const store = new Vuex.Store({
     state,
     getters,
     mutations,
     actions,
+    modules: {
+        test
+    },
+    plugins: [vuexLocal.plugin]
 })
-
 export default store
