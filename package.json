@@ -15,7 +15,7 @@
     "analyze": "cross-env NODE_ENV=production npm_config_report=true npm run build"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "echarts": "^4.2.1",
     "mockjs": "^1.0.1-beta3",
     "v-charts": "^1.19.0",
